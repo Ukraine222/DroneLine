@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droneline</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="tab" data-tab="shop">Магазин</div>
+        <div class="tab" data-tab="inventory">Инвентарь</div>
+        <div class="tab" data-tab="locations">Локации</div>
+        <div class="tab" data-tab="storage">Хранилище</div>
+        <div class="tab" data-tab="stats">Статистика</div>
+        <div class="tab" data-tab="mvg">МВГ</div>
+        <div id="locations" class="tab-content">Локации (в разработке)</div>
+        <div id="storage" class="tab-content">Хранилище (в разработке)</div>
+        <div id="stats" class="tab-content">Статистика (в разработке)</div>
+        <div id="mvg" class="tab-content">МВГ (в разработке)</div>
+    </div>
+    <div id="gameContainer">
+        <div id="ui">Монеты: <span id="coins">0</span> | Сбито: <span id="score">0</span></div>
+        <div id="crosshair"></div>
+        <canvas id="reloadTimer" width="30" height="30"></canvas>
+        <canvas id="gameCanvas"></canvas>
+        <div id="notification"></div>
+        <div id="shopModal" class="modal">
+            <div id="shopTabs"></div>
+            <div id="shopContent"></div>
+            <div id="shopClose" class="modal-close">✖</div>
+        </div>
+        <div id="inventoryModal" class="modal">
+            <div id="inventoryClose" class="modal-close">✖</div>
+            <div id="inventoryContent"></div>
+        </div>
+        <div id="versionLabel">1.1 updt</div>
+        <div id="alarmText">ОТБОЙ!</div>
+        <div id="threatText">Без угроз</div>
+    </div>
+    <script src="shop.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
